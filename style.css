@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+body
+{
+    overflow-x: hidden;
+    min-height: 100vh;
+    background: linear-gradient(#2b1055, #7597de);
+}
+header
+{
+    position: absolute;
+    width: 100%;
+    padding: 30px 100px;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 20;
+}
+header .logo
+{
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    letter-spacing: 3px;
+}
+header ul
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+header ul li
+{
+    list-style: none;
+    margin-left: 20px;
+}
+header ul li a
+{
+    text-decoration: none;
+    color: white;
+    padding: 6px 15px;
+    border-radius: 20px;
+}
+header ul li a:hover
+{
+    background: rgba(255, 255, 255, 0.692);
+    color: black;
+}
+header ul li a.active
+{
+    background: white;
+    color: black;
+}
+section
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+section::before
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #1c0522, transparent);
+    z-index: 5;
+}
+section img
+{
+    position: absolute;
+    top: 0;
+    left: 0; 
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+section img#moon
+{
+    mix-blend-mode: screen;
+}
+section img#mountain_front
+{
+    z-index: 3;
+}
+#text
+{
+    right: -350px;
+    position: absolute;
+    color: white;
+    white-space: nowrap;
+    font-size: 7.5vw;
+    z-index: 2;
+}
+#main-btn
+{
+    display: inline-block;
+    text-decoration: none;
+    padding: 8px 30px;
+    border-radius: 30px;
+    background-color: white;
+    color: black;
+    font-size: 1.5em;
+    z-index: 4;
+    transform: translateY(100px);
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+}
+#main-btn:hover
+{
+    transition: 0.35s ease-in-out;
+    background-color: #2b1055;
+    color: white;
+}
+.moon-article
+{
+    position: relative;
+    padding: 100px;
+    background: #1c0522;
+}
+.moon-article h2
+{
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    color: white;
+}
+.moon-article p
+{
+    color: white;
+    font-size: 1.5em;
+}
